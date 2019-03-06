@@ -35,7 +35,7 @@ function ithemes_itsec_local_qr_code_updater_register( $updater ) {
 	$updater->register( 'itsec-local-qr-code', __FILE__ );
 }
 
-add_action( 'ithemes_updater_register', 'ithemes_repository_name_updater_register' );
+add_action( 'ithemes_updater_register', 'ithemes_itsec_local_qr_code_updater_register' );
 require( dirname( __FILE__ ) . '/lib/updater/load.php' );
 
 function itsec_local_qr_mode_generate_two_factor_totp( $url, $payload ) {
