@@ -6,7 +6,7 @@
  * Description: Generate QR codes locally instead of relying on the iThemes Security API.
  * Author: iThemes
  * Author URI: https://ithemes.com
- * Version: 1.0.0
+ * Version: 1.0.1
  * Text Domain: it-l10n-iitsec-local-qr-code
  * Domain Path: /lang
  * Network: True
