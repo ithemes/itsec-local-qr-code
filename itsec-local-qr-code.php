@@ -43,7 +43,7 @@ function itsec_local_qr_mode_generate_two_factor_totp( $url, $payload ) {
 	require_once dirname( __FILE__ ) . '/vendor/qr-code.php';
 
 	try {
-		$qr = ITSEC_QRCode::getMinimumQRCode( $payload, ITSEC_QR_ERROR_CORRECT_LEVEL_L );
+		$qr = ITSEC_QRCode::getMinimumQRCode( urldecode( $payload ), ITSEC_QR_ERROR_CORRECT_LEVEL_L );
 		$image = $qr->createImage( 4, 0 );
 
 		ob_start();
