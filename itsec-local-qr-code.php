@@ -36,7 +36,10 @@ function ithemes_itsec_local_qr_code_updater_register( $updater ) {
 }
 
 add_action( 'ithemes_updater_register', 'ithemes_itsec_local_qr_code_updater_register' );
-require( dirname( __FILE__ ) . '/lib/updater/load.php' );
+
+if ( file_exists( __DIR__ . '/lib/updater/load.php' ) ) {
+	require( dirname( __FILE__ ) . '/lib/updater/load.php' );
+}
 
 function itsec_local_qr_mode_generate_two_factor_totp( $url, $payload ) {
 
